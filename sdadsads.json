@@ -1,9 +1,0 @@
-{
-  "name" : "sdadsads",
-  "platform" : "node",
-  "language" : "js",
-  "runProcess" : "main",
-  "hash" : "3ZpqtOPrqbbgDwSnLIrBp7XmBncZAEk6F9n4M6YzZt4=",
-  "processes" : [{"name":"main","entryNode":"_exit","exitNode":"_exit","nodes":[{"name":"_exit","nextNodes":[],"nodeIsSubProcess":false,"skipped":false,"function":""}],"variables":[{"name":"dsadasads","required":true,"isInput":false,"isOutput":false,"level":"INTERMEDIATE","type":"{\"type\": \"string\"}","value":"\"\"","meta":{}}],"meta":{"layout":{"type":"sequence","nodes":[]},"endNode":"_exit"}}],
-  "meta" : {"version":3,"created":1600602969637,"lastUpdated":1600605917915,"numberOfBlocks":0,"description":"","workerGroup":"default","customMET":false}
-}
