@@ -1,0 +1,9 @@
+{
+  "name" : "Flow",
+  "platform" : "node",
+  "language" : "js",
+  "runProcess" : "main",
+  "hash" : "OMaUGiJ1+Fah4mRL9LKtTuwF5bLnaKAQyCIELbBzbDA=",
+  "processes" : [{"name":"main","entryNode":"A1","exitNode":"_exit","nodes":[{"name":"A1","process":"./FolderA/FlowA","nodeIsSubProcess":true,"skipped":false,"processParameters":[],"nextNodes":["_exit"]},{"name":"_exit","nextNodes":[],"nodeIsSubProcess":false,"skipped":false,"function":""}],"variables":[],"meta":{"layout":{"type":"sequence","nodes":[{"type":"action","node":"A1"}]},"endNode":"_exit"}}],
+  "meta" : {"version":3,"created":1600608816349,"lastUpdated":1600608823092,"numberOfBlocks":1}
+}
