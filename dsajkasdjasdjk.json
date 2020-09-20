@@ -1,0 +1,9 @@
+{
+  "name" : "dsajkasdjasdjk",
+  "platform" : "node",
+  "language" : "js",
+  "runProcess" : "main",
+  "hash" : "zS+g/EfIlt/uBA+i000LXm9jWKoRh4926wSSVt7GJpY=",
+  "processes" : [{"name":"main","entryNode":"_exit","exitNode":"_exit","nodes":[{"name":"_exit","nextNodes":[],"nodeIsSubProcess":false,"skipped":false,"function":""}],"variables":[],"meta":{"layout":{"type":"sequence","nodes":[]},"endNode":"_exit"}}],
+  "meta" : {"version":3,"description":"още асадасд асдлас кдйа л","created":1600607683768,"lastUpdated":1600607683768,"numberOfBlocks":0}
+}
