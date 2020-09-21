@@ -1,0 +1,9 @@
+{
+  "name" : "Flow",
+  "platform" : "node",
+  "language" : "js",
+  "runProcess" : "main",
+  "hash" : "h/wBz82TeZDOLwUERsUuHc7G7slH5g5sWK0kIydP2hE=",
+  "processes" : [{"name":"main","entryNode":"A1","exitNode":"_exit","nodes":[{"name":"A1","process":"admin/User/FolderB/FlowB","nodeIsSubProcess":true,"skipped":false,"processParameters":[],"nextNodes":["A2"]},{"name":"A2","process":"system/Common/Sleep","nodeIsSubProcess":true,"skipped":false,"processParameters":[{"name":"seconds","value":"2"}],"nextNodes":["_exit"]},{"name":"_exit","nextNodes":[],"nodeIsSubProcess":false,"skipped":false,"function":""}],"variables":[],"meta":{"layout":{"type":"sequence","nodes":[{"type":"action","node":"A1"},{"type":"action","node":"A2"}]},"endNode":"_exit"}}],
+  "meta" : {"version":3,"created":1600608816349,"lastUpdated":1600611612365,"numberOfBlocks":2}
+}
