@@ -1,0 +1,9 @@
+{
+  "name" : "second flow",
+  "platform" : "node",
+  "language" : "js",
+  "runProcess" : "main",
+  "hash" : "SddlZXOfLttbAFcBCRPbMmdp6wEh4YnwdWGJKkLo69I=",
+  "processes" : [{"name":"main","entryNode":"Assign_1","exitNode":"_exit","nodes":[{"name":"Assign_1","nodeIsSubProcess":false,"skipped":false,"function":"$result=\"Hello, World!\"","nextNodes":["_exit"]},{"name":"_exit","nextNodes":[],"nodeIsSubProcess":false,"skipped":false,"function":""}],"variables":[{"name":"result","required":true,"isInput":false,"isOutput":true,"level":"INTERMEDIATE","type":"{\"type\": \"any\"}","value":"","meta":{}}],"meta":{"layout":{"type":"sequence","nodes":[{"type":"assign","node":"Assign_1"}]},"endNode":"_exit"}}],
+  "meta" : {"version":3,"layout":"flat","created":1614267257919,"lastUpdated":1614267257919,"numberOfBlocks":1}
+}
