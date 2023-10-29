@@ -1,0 +1,76 @@
+name: http_get_users
+platform: node
+blocks:
+  - action: system/Common/HttpRequest
+    name: HttpRequest_1
+    inputs:
+      - name: method
+        value: '"GET"'
+      - name: host
+        value: $url
+      - name: protocol
+        value: '"https"'
+  - action: foreach
+    name: ForEach_1
+    blocks:
+      - action: if
+        name: If_1
+        then:
+          - action: system/Common/ArrayPush
+            name: ArrayPush_1
+            inputs:
+              - name: array
+                value: $evenIds
+              - name: item
+                value: $ForEach_1.item
+        else:
+          - action: system/Common/ArrayPush
+            name: ArrayPush_2
+            inputs:
+              - name: array
+                value: $oddIds
+              - name: item
+                value: $ForEach_1.item
+        condition: $ForEach_1.item.id % 2 === 0
+    list: $HttpRequest_1.result
+  - action: assign
+    name: Assign_1
+    variable: $allItems
+    value: $HttpRequest_1.result
+variables:
+  - name: allItems
+    required: false
+    isInput: false
+    isOutput: true
+    level: INTERMEDIATE
+    type:
+      type: array
+    value: "[]"
+  - name: evenIds
+    required: false
+    isInput: false
+    isOutput: true
+    level: INTERMEDIATE
+    type:
+      type: array
+    value: "[]"
+  - name: oddIds
+    required: false
+    isInput: false
+    isOutput: true
+    level: INTERMEDIATE
+    type:
+      type: array
+    value: "[]"
+  - name: url
+    required: true
+    isInput: true
+    isOutput: false
+    level: INTERMEDIATE
+    type:
+      type: string
+    value: '"jsonplaceholder.typicode.com/users"'
+meta:
+  version: 5
+  layout: flat
+  workerGroup: default
