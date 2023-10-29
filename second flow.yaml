@@ -1,0 +1,19 @@
+name: second flow
+platform: node
+blocks:
+  - name: Assign_1
+    action: assign
+    variable: $result
+    value: "\"Hello, World!\""
+variables:
+  - name: result
+    level: INTERMEDIATE
+    type: "{\"type\": \"any\"}"
+    value: ""
+    isInput: false
+    isOutput: true
+    required: true
+    meta: {}
+meta:
+  version: 5
+  layout: flat
