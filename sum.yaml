@@ -1,0 +1,36 @@
+name: sum
+platform: node
+blocks:
+  - action: assign
+    name: Assign_1
+    variable: $result
+    value: $a + $b
+variables:
+  - name: result
+    required: false
+    isInput: false
+    isOutput: true
+    level: INTERMEDIATE
+    type:
+      type: any
+    value: '""'
+  - name: a
+    required: true
+    isInput: true
+    isOutput: false
+    level: INTERMEDIATE
+    type:
+      type: number
+    value: "0"
+  - name: b
+    required: true
+    isInput: true
+    isOutput: false
+    level: INTERMEDIATE
+    type:
+      type: number
+    value: "0"
+meta:
+  version: 5
+  layout: flat
+  workerGroup: default
