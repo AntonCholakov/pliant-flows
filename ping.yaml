@@ -4,17 +4,25 @@ blocks:
   - action: assign
     name: Assign_1
     variable: $result
-    value: "\"Hello, World!\""
+    value: "`Hello, ${$in}!`"
 variables:
   - name: result
+    required: false
     isInput: false
     isOutput: true
-    required: false
     level: INTERMEDIATE
     type:
       type: any
     value: '""'
+  - name: in
+    required: true
+    isInput: true
+    isOutput: false
+    level: INTERMEDIATE
+    type:
+      type: string
+    value: '"World"'
 meta:
   version: 5
-  layout: flow
+  layout: flat
   workerGroup: default
