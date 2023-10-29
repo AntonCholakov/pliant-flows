@@ -1,0 +1,20 @@
+name: p
+platform: node
+blocks:
+  - action: assign
+    name: Assign_1
+    variable: $result
+    value: "\"Hello, World!\""
+variables:
+  - name: result
+    isInput: false
+    isOutput: true
+    required: false
+    level: INTERMEDIATE
+    type:
+      type: any
+    value: '""'
+meta:
+  version: 5
+  layout: flow
+  workerGroup: default
